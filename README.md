@@ -39,8 +39,7 @@ sbt test
 - `src/main/scala/marketplace/ui` — ScalaFX screens (Browse, My Listings, New Listing, Moderate, Wallet & History)
 - `src/main/scala/marketplace/MarketplaceService.scala` — business logic connecting the pieces above
 - `src/test/scala` — ScalaTest unit tests
-- `docs/dev_log.md` — dated development log
-- `ai/` — AI interaction log and declaration
+
 
 ## Third-Party Libraries
 | Library | License |
@@ -49,26 +48,9 @@ sbt test
 | OpenJFX (JavaFX) | GPL v2 with Classpath Exception |
 | ScalaTest | Apache License 2.0 |
 
-Full citation detail (versions, source links) is in `docs/citations.md`.
-
-## AI usage summary
-AI tools (Claude, Antigravity, Codex, and Freebuff) were used throughout
-development — for initial project scaffolding, UI styling and layout,
-debugging (e.g. a session-logout bug traced to ComboBox selection
-events), Coordinator/moderation feature implementation, and generating
-and verifying the UML diagram against the final codebase. All AI output
-was reviewed, tested, and adjusted before being kept; several fixes
-(e.g. the session bug) were diagnosed independently before asking AI to
-help confirm the cause. Full prompt-by-prompt detail is logged in
-`ai/interaction_log.md`, and tool usage is declared in `ai/declaration.md`.
-
-## Features (map to the 4+ required)
+## Features 
 1. Browse all listings and request an exchange
 2. Create a new listing (with input validation)
 3. View your own listings
 4. View credit balance and transaction history
 5. Moderate listings as a Coordinator (retire listings in your moderated category)
-
-## Known limitations / next steps
-- Single-session "logged in" member (no real login screen yet)
-- No listing editing yet (delete is supported)
